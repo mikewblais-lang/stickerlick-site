@@ -1,7 +1,3 @@
-+312
-Lines changed: 312 additions & 0 deletions
-Original file line number	Diff line number	Diff line change
-@@ -0,0 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -120,7 +116,16 @@ Original file line number	Diff line number	Diff line change
     .flow-step + .flow-step { margin-top: 14px; }
     .portfolio-note { color: #64748b; max-width: 520px; }
     .portfolio-box {
-      aspect-ratio: 1/1; border-radius: 22px; background: linear-gradient(135deg, #f1f5f9, #e2e8f0, #f8fafc);
+      aspect-ratio: 1/1;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #f1f5f9, #e2e8f0, #f8fafc);
+      overflow: hidden;
+    }
+    .portfolio-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
     .tag {
       display: inline-block; padding: 7px 11px; border-radius: 999px; font-size: .72rem; font-weight: 800;
@@ -209,6 +214,7 @@ Original file line number	Diff line number	Diff line change
         </div>
       </div>
     </section>
+
     <section id="types" class="block soft">
       <div class="container">
         <div class="section-head">
@@ -223,6 +229,7 @@ Original file line number	Diff line number	Diff line change
         </div>
       </div>
     </section>
+
     <section id="how" class="block">
       <div class="container why-layout">
         <div>
@@ -249,6 +256,7 @@ Original file line number	Diff line number	Diff line change
         </div>
       </div>
     </section>
+
     <section id="portfolio" class="block soft">
       <div class="container">
         <div style="display:flex;justify-content:space-between;gap:20px;align-items:end;flex-wrap:wrap;">
@@ -259,15 +267,75 @@ Original file line number	Diff line number	Diff line change
           <div class="portfolio-note">Replace these with your own approved work, mockups, or licensed images before launch.</div>
         </div>
         <div class="cards-3" style="margin-top:28px;">
-          <div class="card"><div class="portfolio-box"></div><div style="padding-top:16px;"><div class="tag">Custom art</div><h3>Cartoon Character Stickers</h3><p>Portfolio placeholder ready for real sticker examples.</p></div></div>
-          <div class="card"><div class="portfolio-box"></div><div style="padding-top:16px;"><div class="tag">Jobsite favorite</div><h3>Hard Hat Crew Designs</h3><p>Portfolio placeholder ready for real sticker examples.</p></div></div>
-          <div class="card"><div class="portfolio-box"></div><div style="padding-top:16px;"><div class="tag">Personalized</div><h3>Kids Name Stickers</h3><p>Portfolio placeholder ready for real sticker examples.</p></div></div>
-          <div class="card"><div class="portfolio-box"></div><div style="padding-top:16px;"><div class="tag">Clean vinyl</div><h3>Vehicle Decals</h3><p>Portfolio placeholder ready for real sticker examples.</p></div></div>
-          <div class="card"><div class="portfolio-box"></div><div style="padding-top:16px;"><div class="tag">Bold layouts</div><h3>Funny Bumper Stickers</h3><p>Portfolio placeholder ready for real sticker examples.</p></div></div>
-          <div class="card"><div class="portfolio-box"></div><div style="padding-top:16px;"><div class="tag">Branding</div><h3>Business Labels & Sheets</h3><p>Portfolio placeholder ready for real sticker examples.</p></div></div>
+          <div class="card">
+            <div class="portfolio-box">
+              <img src="images/cartoon-character-stickers.jpg" alt="Cartoon Character Stickers">
+            </div>
+            <div style="padding-top:16px;">
+              <div class="tag">Custom art</div>
+              <h3>Cartoon Character Stickers</h3>
+              <p>Portfolio placeholder ready for real sticker examples.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="portfolio-box">
+              <img src="images/hard-hat-crew-designs.jpg" alt="Hard Hat Crew Designs">
+            </div>
+            <div style="padding-top:16px;">
+              <div class="tag">Jobsite favorite</div>
+              <h3>Hard Hat Crew Designs</h3>
+              <p>Portfolio placeholder ready for real sticker examples.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="portfolio-box">
+              <img src="images/kids-name-stickers.jpg" alt="Kids Name Stickers">
+            </div>
+            <div style="padding-top:16px;">
+              <div class="tag">Personalized</div>
+              <h3>Kids Name Stickers</h3>
+              <p>Portfolio placeholder ready for real sticker examples.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="portfolio-box">
+              <img src="images/vehicle-decals.jpg" alt="Vehicle Decals">
+            </div>
+            <div style="padding-top:16px;">
+              <div class="tag">Clean vinyl</div>
+              <h3>Vehicle Decals</h3>
+              <p>Portfolio placeholder ready for real sticker examples.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="portfolio-box">
+              <img src="images/funny-bumper-stickers.jpg" alt="Funny Bumper Stickers">
+            </div>
+            <div style="padding-top:16px;">
+              <div class="tag">Bold layouts</div>
+              <h3>Funny Bumper Stickers</h3>
+              <p>Portfolio placeholder ready for real sticker examples.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="portfolio-box">
+              <img src="images/business-labels-sheets.jpg" alt="Business Labels and Sheets">
+            </div>
+            <div style="padding-top:16px;">
+              <div class="tag">Branding</div>
+              <h3>Business Labels & Sheets</h3>
+              <p>Portfolio placeholder ready for real sticker examples.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
     <section class="block dark-band">
       <div class="container cards-3">
         <div class="card"><div class="section-kicker" style="color:#6ee7b7;">Materials</div><h3>High-quality vinyl options</h3><p>Great for custom stickers, labels, sheets, and specialty vinyl styles depending on the order.</p></div>
@@ -275,6 +343,7 @@ Original file line number	Diff line number	Diff line change
         <div class="card"><div class="section-kicker" style="color:#6ee7b7;">Service</div><h3>Design-first custom workflow</h3><p>Best for people who care about getting the concept right before production starts.</p></div>
       </div>
     </section>
+
     <section id="upload" class="block form-wrap">
       <div class="container">
         <div class="form-box">
@@ -296,6 +365,7 @@ Original file line number	Diff line number	Diff line change
       </div>
     </section>
   </main>
+
   <footer>
     <div class="container foot">
       <div>
